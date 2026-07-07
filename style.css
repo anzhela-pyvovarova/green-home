@@ -204,3 +204,41 @@ body{
     border-radius: 10px;
 }
 
+
+
+@media (max-width: 768px) {
+    .header .container{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .header .nav{
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero .container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content{
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-titile{
+        font-size: 42px;
+    }
+
+    .hero-description{
+        font-size: 18px;
+    }
+
+    .hero-img img{
+        width: 280px;
+    }
+
+    
+}
