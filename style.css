@@ -240,5 +240,18 @@ body{
         width: 280px;
     }
 
-    
+    .popular-plants .container{
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+    }
+
+    .plant-card{
+        padding: 40px 25px 25px;
+        gap: 25px;
+
+    }
+
+    .plant-title{
+        font-size: 26px;
+    }
 }
