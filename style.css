@@ -19,6 +19,25 @@ body{
     padding: 0 20px;
 }
 
+.button{
+    padding: 15px 35px;
+    height: 50px;
+    background-color: #4f9d5d;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.button:hover{
+    background-color: #3d7d4a;
+    transform: translateY(-3px);
+}
 
 
 .header .container{
@@ -86,7 +105,7 @@ body{
 
 .hero{
     background-color: #f1f8f1;
-    padding: 80px 0;
+    padding: 50px 0;
 }
 
 .hero .container{
@@ -116,27 +135,7 @@ body{
     
 }
 
-.hero-button{
-    padding: 15px 35px;
-    height: 50px;
-    background: #4f9d5d;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    color: white;
-    font-size: 22px;
-    transition:
-        background-color 0.3s ease,
-        transform 0.3s ease;
-    
-}
 
-.hero-button:hover{
-    background-color: #3d7d4a;
-    cursor: pointer;
-    transform: 
-        translateY(-3px);
-}
 
 
 
@@ -151,13 +150,26 @@ body{
 
 /* section popular-plants */
 
+.popular-plants{
+    padding: 50px 0;
+}
+
 .popular-plants .container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
     gap: 40px;
-    padding: 50px 0;
+    
+}
+
+.section-title{
+    grid-column: 1 / -1;
+    font-size: 30px;
+    font-weight: 700;
+    color: #2f6b3f;
+    text-align: center;
+    
 }
 
 .plant-card{
@@ -177,7 +189,7 @@ body{
 .plant-card:hover{
     transform: 
         translateY(-15px);
-    border-left: 1px solid orange;
+    
     
 }
 
@@ -186,27 +198,9 @@ body{
     font-size: 30px;
 }
 
-.plant-card button{
-    padding: 15px 35px;
-    height: 50px;
-    background: #4f9d5d;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    color: white;
-    font-size: 22px;
-    transition:
-        background-color 0.3s ease,
-        transform 0.3s ease;
 
-}
 
-.plant-card button:hover{
-     background-color: #3d7d4a;
-    cursor: pointer;
-    transform: 
-        translateY(-3px);
-}
+
 
 .popular-plants img{
     width: 100%;
@@ -235,7 +229,7 @@ body{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    padding: 20px 0;
+    
     
 }
 
@@ -252,7 +246,7 @@ body{
 
 .tip-card:hover{
     transform: translateY(-5px);
-    border-left: 2px solid orange;
+    
 }
 
 .tip-card span{
@@ -325,7 +319,7 @@ body{
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .hero{
+    .hero .hero-container{
         gap: 40px;
     }
 }
