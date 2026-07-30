@@ -40,6 +40,12 @@ body{
 }
 
 
+/* header */
+
+.header{
+    padding: 20px 0;
+}
+
 .header .container{
     display: flex;
     justify-content: space-between;
@@ -159,7 +165,7 @@ body{
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
     
 }
 
@@ -193,6 +199,8 @@ body{
     
 }
 
+
+
 .plant-title{
     color: #2f6b3f;
     font-size: 30px;
@@ -209,6 +217,9 @@ body{
     border-radius: 10px;
 }
 
+.plant-button{
+    margin-top: 10px;
+}
 
 
 /* section care-tips */
@@ -254,6 +265,8 @@ body{
     font-size: 25px;
 }
 
+
+/* Gallery */
 
 
 
@@ -312,6 +325,24 @@ body{
 
     .plant-title{
         font-size: 26px;
+    }
+
+    .care-tips .container{
+        grid-template-columns: 1fr;
+    }
+
+    .care-tips h3{
+        font-size: 26px;
+    }
+
+    .tip-card{
+        text-align: center;
+        border-left: none;
+        border-top: 1px solid #2f6b3f;
+    }
+
+    .tip-card span{
+        font-size: 22px;
     }
 }
 
