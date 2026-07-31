@@ -289,6 +289,27 @@ body{
 }
 
 
+/* footer */
+
+.footer{
+    background-color: #2f6b3f;
+    padding: 30px 0;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-logo,
+.footer-text,
+.footer-copy{
+    color: white;
+}
+
+
 
 /* MEDIA */
 @media (max-width: 768px) {
@@ -361,6 +382,18 @@ body{
 
     .tip-card span{
         font-size: 22px;
+    }
+
+    .gallery-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-item-mobile-wide{
+        grid-column: 1 / -1;
+    }
+
+    .gallery-item-wide{
+        grid-column: span 1;
     }
 }
 
