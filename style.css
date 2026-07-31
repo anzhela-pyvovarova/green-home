@@ -111,7 +111,7 @@ body{
 
 .hero{
     background-color: #f1f8f1;
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .hero .container{
@@ -141,10 +141,6 @@ body{
     
 }
 
-
-
-
-
 .hero-img img{
     width: 400px;
     
@@ -152,12 +148,10 @@ body{
 
 
 
-
-
 /* section popular-plants */
 
 .popular-plants{
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .popular-plants .container{
@@ -196,19 +190,12 @@ body{
     transform: 
         translateY(-15px);
     
-    
 }
-
-
 
 .plant-title{
     color: #2f6b3f;
     font-size: 30px;
 }
-
-
-
-
 
 .popular-plants img{
     width: 100%;
@@ -268,7 +255,38 @@ body{
 
 /* Gallery */
 
+.gallery{
+    padding: 20px 0;
+}
 
+.gallery .section-title{
+    padding: 20px 0;
+}
+
+.gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-item{
+    height: 250px;
+}
+
+.gallery-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-item-wide{
+    grid-column: span 2;
+}
+
+.gallery-item-full{
+    grid-column: 1 / -1;
+}
 
 
 
